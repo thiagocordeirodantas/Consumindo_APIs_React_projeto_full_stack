@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { Link } from 'react-router-dom'
 const Opcao = styled.li `
 
     min-width: 120px;
@@ -22,12 +22,12 @@ const Opcoes = styled.ul `
 
 function OpcoesHeader(){
 
-    const OpcoesDeTexto = ['CATEGORIAS','FAVORITOS','MINHA ESTANTE']
+    const OpcoesDeTexto = ['CATEGORIAS','FAVORITOS','ESTANTE']
 
     return (
         <Opcoes>
             {OpcoesDeTexto.map((texto) => (
-                 <Opcao><p>{texto}</p></Opcao>
+              <Link to={`/${texto}`}><Opcao><p>{texto}</p></Opcao></Link>  
             ))}
       </Opcoes>
     )
