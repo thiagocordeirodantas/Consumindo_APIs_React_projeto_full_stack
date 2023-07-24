@@ -1,5 +1,5 @@
-import perfil from '../../imagens/perfil.svg'
-import sacola from '../../imagens/sacola.svg'
+import perfil from '../../img/perfil.svg'
+import sacola from '../../img/sacola.svg'
 import styled from 'styled-components'
 
 const Icone = styled.li`
